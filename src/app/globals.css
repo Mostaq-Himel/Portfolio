@@ -8,6 +8,12 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+@layer base {
+  .nav-item {
+    @apply px-3 py-1.5 rounded-full text-white/80 text-sm font-semibold hover:bg-white/20 hover:text-white/90 active:text-blue-300 md:px-5 transition duration-300;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
